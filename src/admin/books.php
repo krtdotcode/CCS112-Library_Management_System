@@ -19,7 +19,7 @@ $result = $conn->query($sql);
 <body>
     <h2>Admin: Manage Books</h2>
     <a href="../logout.php">Logout</a> |
-    <a href="#">Add New Book</a>
+    <a href="add_book.php">Add New Book</a>
     <br><br>
     <form action="#" method="get" style="margin-bottom: 20px;">
         <input type="text" name="q" placeholder="Search by title, author, or year..." required>
