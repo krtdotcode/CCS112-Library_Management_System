@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ====== Base Layout ====== */
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: #f8faf6;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+	max-width: 900px;
+	margin: 40px auto 0 auto;
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 32px 0 rgba(44,62,80,0.10);
+	padding: 32px 40px 40px 40px;
+}
+
+/* ====== Typography ====== */
+h2 {
+	color: #2d6cdf;
+	margin-top: 0;
+	margin-bottom: 24px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	font-size: 2.1em;
+	font-weight: 700;
+}
+
+a {
+	color: #2d6cdf;
+	text-decoration: none;
+	transition: color 0.2s;
+	font-weight: 500;
+}
+a:hover {
+	color: #174ea6;
+	text-decoration: underline;
+}
+
+/* ====== Forms ====== */
+form {
+	max-width: 420px;
+	margin: 24px auto 32px auto;
+	background: #f9fafb;
+	padding: 28px 36px 24px 36px;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+form label {
+	font-weight: 600;
+	margin-bottom: 2px;
+}
+form input[type="text"],
+form input[type="number"] {
+	width: 100%;
+	padding: 10px 12px;
+	margin-bottom: 12px;
+	border: 1.5px solid #d1d5db;
+	border-radius: 6px;
+	font-size: 1em;
+	background: #fff;
+	transition: border 0.2s;
+	box-sizing: border-box;
+}
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+	border: 1.5px solid #2d6cdf;
+	outline: none;
+}
+form input[type="submit"],
+form button,
+.btn {
+	background: #2d6cdf;
+	color: #fff;
+	border: none;
+	padding: 12px 28px;
+	border-radius: 7px;
+	font-size: 1.08em;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 8px;
+	box-shadow: 4px 4px 0 0 #b2c6e6;
+	transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+	position: relative;
+}
+form input[type="submit"]:hover,
+form button:hover,
+.btn:hover {
+	background: #174ea6;
+	box-shadow: 6px 6px 0 0 #7a99c7;
+	transform: translateY(-2px) scale(1.03);
+}
+
+/* ====== Tables ====== */
+table {
+	width: 96%;
+	margin: 32px auto 0 auto;
+	border-collapse: collapse;
+	background: #fff;
+	border-radius: 14px;
+	box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+	overflow: hidden;
+}
+th, td {
+	padding: 14px 18px;
+	text-align: left;
+	font-size: 1.04em;
+}
+th {
+	background: #eaf1fb;
+	color: #2d6cdf;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+tr:nth-child(even) {
+	background: #f6f8fa;
+}
+tr:hover {
+	background: #eaf1fb;
+	transition: background 0.2s;
+}
+
+/* Loader Animation */
+.loader {
+  --w:10ch;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: var(--w);
+  width:var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0, 
+    calc(-3*var(--w)) 0, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0, 
+    calc(-9*var(--w)) 0;
+  animation: l16 2s infinite;
+}
+.loader:before {
+  content:"Loading...";
+}
+@keyframes l16 {
+  20% {text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0 red, 
+    calc(-3*var(--w)) 0, 
+    calc(-4*var(--w)) 0 #ffa516,
+    calc(-5*var(--w)) 0 #63fff4, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0 green, 
+    calc(-9*var(--w)) 0;}
+  40% {text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0 red, 
+    calc(-3*var(--w)) 0 #e945e9, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0 green, 
+    calc(-6*var(--w)) 0 orange, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0 green, 
+    calc(-9*var(--w)) 0;}
+  60% {text-shadow: 
+    calc(-1*var(--w)) 0 lightblue, 
+    calc(-2*var(--w)) 0, 
+    calc(-3*var(--w)) 0 #e945e9, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0 green, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0 yellow, 
+    calc(-8*var(--w)) 0 #ffa516, 
+    calc(-9*var(--w)) 0 red;}
+  80% {text-shadow: 
+    calc(-1*var(--w)) 0 lightblue, 
+    calc(-2*var(--w)) 0 yellow, 
+    calc(-3*var(--w)) 0 #63fff4, 
+    calc(-4*var(--w)) 0 #ffa516,
+    calc(-5*var(--w)) 0 red, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0 grey, 
+    calc(-8*var(--w)) 0 #63fff4, 
+    calc(-9*var(--w)) 0 ;}
+}
