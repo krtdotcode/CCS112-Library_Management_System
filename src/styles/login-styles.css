@@ -1,0 +1,49 @@
+.login-container {
+    max-width: 350px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 0 #d1d5db;
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.role-select {
+    margin: 1.5rem 0;
+}
+
+.role-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #1e40af;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.role-btn:last-child {
+    background: #10b981;
+    box-shadow: 4px 4px 0 #047857;
+}
+
+.role-btn:hover {
+    filter: brightness(0.95);
+}
+
+.error-msg {
+    color: #dc2626;
+    margin-bottom: 1rem;
+}
