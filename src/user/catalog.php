@@ -20,7 +20,7 @@ $result = $conn->query($sql);
     <h2>User: Book Catalog</h2>
     <a href="../logout.php">Logout</a>
     <br><br>
-    <form action="#" method="get" style="margin-bottom: 20px;">
+    <form action="search.php" method="get" style="margin-bottom: 20px;">
         <input type="text" name="q" placeholder="Search by title, author, or year..." required>
         <input type="submit" value="Search">
     </form>
