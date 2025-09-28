@@ -21,7 +21,7 @@ $result = $conn->query($sql);
     <a href="../logout.php">Logout</a> |
     <a href="add_book.php">Add New Book</a>
     <br><br>
-    <form action="#" method="get" style="margin-bottom: 20px;">
+    <form action="search.php" method="get" style="margin-bottom: 20px;">
         <input type="text" name="q" placeholder="Search by title, author, or year..." required>
         <input type="submit" value="Search">
     </form>
